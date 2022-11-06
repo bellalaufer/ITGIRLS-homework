@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+</head>
+
+<body>
+    <button onClick="showSum()">Сложение</button>
+    <button onClick="showDifference()">Вычитание</button>
+    <button onClick="showProduct()">Умножение</button>
+    <button onClick="showQuotient()">Деление</button>
+
+    <script>
+        function showSum() {
+            function getSum() {
+                let a = prompt("Введите число")
+                let b = prompt("Введите второе число")
+                return +a + +b;
+            }
+            let result = getSum();
+            alert(result)
+        }
+
+        function showDifference() {
+            function getDifference() {
+                let a = prompt("Введите число")
+                let b = prompt("Введите второе число")
+                return a - b;
+            }
+            let result = getDifference();
+            alert(result)
+        }
+
+        function showProduct() {
+            function getProduct() {
+                let a = prompt("Введите число")
+                let b = prompt("Введите второе число")
+                return a * b;
+            }
+            let result = getProduct();
+            alert(result)
+        }
+
+        function showQuotient() {
+            function getQuotient() {
+                let a = prompt("Введите число")
+                let b = prompt("Введите второе число")
+                return a / b;
+            }
+            let result = getQuotient();
+            alert(result)
+        }
+    </script>
+
+</body>
+
+</html>
