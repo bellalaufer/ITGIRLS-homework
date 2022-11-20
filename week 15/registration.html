@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/registration.css">
+</head>
+
+<body>
+    <form class="js-form">
+        <h1>Регистрация</h1>
+        <input type="text" class="input js-input" name="name" placeholder="Имя" id="name">
+        <input type="text" class="input js-input" name="last name" placeholder="Фамилия" id="lastname">
+        <input type="text" class="input js-input js-input-password" name="login" placeholder="Придумайте логин"
+            id="login">
+        <input type="password" class="input js-input js-input-password" name="password" placeholder="Придумайте пароль"
+            id="password" onkeyup="checkPass()">
+        <div id="error"></div>
+        <input type="password" class="input js-input js-input-password-check" name="password check"
+            placeholder="Повторите пароль" id="password-check" onkeyup="checkPass()">
+        <div id="error-check"></div>
+        <input type="number" class="input js-input js-input-phone" name="phone" placeholder="Номер мобильного телефона"
+            id="phone">
+        <button type="submit">Зарегистрироваться</button>
+        <div class="checkbox-group">
+            <input type="checkbox" class="checkbox__input js-input-checkbox" id="checkbox">
+            <label class="checkbox__label" for="checkbox">Я принимаю условия Пользовательского соглашения.</label>
+        </div>
+
+
+    </form>
+    <script src="./scripts/registration.js"></script>
+</body>
+
+</html>

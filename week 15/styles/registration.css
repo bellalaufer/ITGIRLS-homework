@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.js-form {
+    width: 30%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+h1 {
+    text-align: center;
+}
+
+button {
+    background-color: orange;
+    height: 40px;
+    border: none;
+    margin-bottom: 5px;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+.input::placeholder {
+    color: #ccc;
+}
+
+.input.error {
+    border-color: red;
+}
+
+.input {
+    margin-bottom: 10px;
+}
+
+#error,
+#error-check {
+    margin-bottom: 5px;
+}
+
+.checkbox-group {
+    display: flex;
+}
+
+#checkbox {
+    margin-right: 10px;
+}
