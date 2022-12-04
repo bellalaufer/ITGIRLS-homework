@@ -2,8 +2,6 @@
 
 let button = document.querySelector("button");
 button.addEventListener("click", sortName);
-//button.addEventListener("click", checkName);
-
 
 function sortName() {
     let text = document.querySelector("input").value;
