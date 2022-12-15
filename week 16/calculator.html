@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор стоимости автомобиля</title>
+</head>
+<body>
+    <div class="container">
+        <p>Выбери модель машины:</p>
+        <select name="brands" id="brands" onChange="selectBrand()">
+            <option value="0">Не выбрано</option>
+            <option value="300">Audi</option>
+            <option value="400">BMW</option>
+            <option value="500">Lada</option>
+        </select><br><br>
+        <select name="models" id="models"></select><br>
+        <p>Возраст автомобиля:</p>
+        <select name="age" id="age">
+            <option value="5000">Меньше 3 лет</option>
+            <option value="3000">От 3 до 5 лет</option>
+            <option value="2000">От 5 до 7 лет</option>
+            <option value="1000">Больше 7 лет</option>
+        </select><br>
+        <p>Тип топлива:</p>
+        <input type="radio" name="fuel" class="fuel" onChange="addFuel()" value="500" checked>Бензин
+        <input type="radio" name="fuel" class="fuel" onChange="addFuel()" value="1000">Дизель
+        <input type="radio" name="fuel" class="fuel" onChange="addFuel()" value="1500">Электро <br><br>
+        <div><br>
+        <p>Покупатель:</p>
+        <input type="checkbox" class="checkbox" value="500">Физическое лицо
+        <input type="checkbox" class="checkbox" value="1000">Юридическое лицо
+        <br>
+        <br>
+        <button class="button">Сумма</button>
+        <div class="result"></div>
+        </div>
+
+    </div>
+   <script src="./scripts/calculator.js"></script> 
+</body>
+</html>
