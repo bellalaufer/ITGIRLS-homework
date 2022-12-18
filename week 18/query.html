@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опросник</title>
+</head>
+
+<body>
+    <h1>Опросник для владельцев животных </h1>
+    <form>
+        <fieldset>
+            <legend>Вы</legend>
+            <div>
+                <label for="ownername">Имя владельца</label>
+                <input type="text" name="name" id="ownername" placeholder="Ваше имя" required />
+                <br>
+                <br>
+            </div>
+            <div>
+                <label for="phone">Телефон</label>
+                <input type="tel" name="phone" id="phone" placeholder="+7(000)000-00-00" pattern="/^\+?(\d{1,3})?[- .]?\(?(?:\d{2,3})\)?[- .]?\d\d\d[- .]?\d\d\d\d$/" minlength="10" maxlength="20" />
+                <br>
+                <br>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Ваш питомец</legend>
+            <div>
+
+                <label for="name">Кличка питомца</label>
+                <input type="text" name="name" id="name" placeholder="Кличка" maxlength="20" required />
+                <br>
+                <br>
+            </div>
+            <p>Выберите тип:</p>
+            <select>
+                <option value="first option">Собака</option>
+                <option value="second option">Кошка</option>
+                <option value="third option">Другое</option>
+            </select>
+            <p>Чем питается:</p>
+            <input type="checkbox" name="food" value="1" />
+            Сухой корм
+            <input type="checkbox" name="food" value="2" />
+            Влажный корм
+            <input type="checkbox" name="food" value="3" />
+            Натуральный корм
+            <br>
+            <br>
+            <div>Пол</div>
+            <input type="radio" name="s" value="male" id="male" />
+            <label for="male">Самец</label>
+            <input type="radio" name="s" value="female" id="female" />
+            <label for="female">Самка</label>
+            <br>
+            <br>
+            <div>Комментарий</div>
+            <textarea rows="5" cols="38" placeholder="Напишите Ваш комментарий здесь" maxlength="150"></textarea>
+            <div>Фото</div>
+            <input type="file" />
+        </fieldset>
+        <br>
+        <button type="button">Сохранить</button>
+
+
+
+
+
+
+
+    </form>
+</body>
+
+</html>
